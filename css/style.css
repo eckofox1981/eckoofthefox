@@ -1,0 +1,23 @@
+ @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+.eckoofthefox {
+    font-family: "Mr Dafoe", cursive;
+    font-size: 3rem;
+    color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    margin-top: 0.25rem;
+    border-bottom: 1px solid rgb(39, 39, 39);
+    margin-bottom: 0;
+}
+
+.eofsubline {
+    font-family: "Mr Dafoe", cursive;
+    font-size: 1.5rem;
+    color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    margin-top: 0.15rem;
+}
+
