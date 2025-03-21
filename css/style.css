@@ -1,7 +1,23 @@
  @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(62, 62, 62);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: bold;
+}
 .eckoofthefox {
+
     font-family: "Mr Dafoe", cursive;
     font-size: 3rem;
     color: rgb(39, 39, 39);
@@ -13,11 +29,17 @@
 }
 
 .eofsubline {
+    color: rgb(39, 39, 39);
     font-family: "Mr Dafoe", cursive;
     font-size: 1.5rem;
-    color: rgb(39, 39, 39);
+    font-weight:100;
+    color: rgb(62, 62, 62);
     display: flex;
     justify-content: center;
-    margin-top: 0.15rem;
+    margin-top: -0.125rem;
 }
 
+.title-logo {
+    margin-top: 1rem;
+    height: 5rem;
+}
