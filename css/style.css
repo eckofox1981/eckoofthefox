@@ -1,5 +1,6 @@
- @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
 
 
 h1 {
@@ -43,3 +44,39 @@ h2 {
 .title-logo:hover {
     height: 4.95rem;
 }
+
+.minor-article {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 200%;
+    transition: 1s;
+}
+
+.minor-article h2 {
+    align-content: center;
+    background-color: red;
+    width: 50%;
+    transition: width 500ms, visibility 500ms;
+}
+
+.minor-article div {
+    background-color: blueviolet;
+    width: 50%;
+    visibility: hidden;
+    transition: width 500ms, visibility 2ms;
+}
+
+.minor-article:hover {
+    h2 {
+        width: 0%;
+        visibility: hidden;
+    }
+
+    div {
+        visibility: visible;
+    }
+}
+

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/styleoutput.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="bg-amber-50">
+  <body class="bg-amber-50 font-noticia">
     <header class="group flex flex-col justify-center h-33 border-b mx-7">
       <a
         class="flex flex-row flex-wrap justify-center align-middle"
@@ -31,7 +31,7 @@
       >
       <section
         style="top: 8.25rem"
-        class="fixed left-1/2 transform -translate-x-1/2 flex flex-row justify-evenly align-middle gap-10 w-2xl m-auto invisible group-hover:visible border z-10 p-4 shadow-md bg-amber-50"
+        class="fixed left-1/2 transform -translate-x-1/2 flex flex-row justify-evenly align-middle gap-10 w-2xl m-auto invisible group-hover:visible border z-10 p-4 bg-amber-50"
       >
         <div class="font-sans font-semibold text-lg">
           <a href="index.html">Latest news</a>
@@ -53,18 +53,21 @@
     <!-- MAIN CONTAINER------------------------------------------------------------------------------------------->
     <section class="flex flex-row flex-wrap mx-10">
       <!-- sidebar ---------------------->
-      <div class="bg-blue-400 basis-1/6 px-1 border-r mt-0.5 flex flex-col">
+      <div class="bg-blue-400 basis-1/6 px-1 border-r my-0.5 flex flex-col gap-1">
         <i>date</i>
         <h2 class="self-center">title</h2>
         <div class="flex flex-col justify-baseline">
           <p>article</p>
-          <i class="self-end pr-4">author</i>
+          <div class="flex flex-row flex-wrap content-center gap-3 self-end h-16">
+            <i class="self-center">author</i>
+            <img class="max-h-5 md:max-h-16" src="/Images/fox_sig.png" alt="">
+          </div>
       </div>
       </div>
       <!-- MAIN CONTENT ------------------------------------------------------------------------------------------>
       <div class="bg-amber-800 basis-5/6 flex flex-col">
         <!-- main article---------------------->
-        <div class="bg-red-400 w-full my-0.5 px-1 flex flex-col">
+        <div class="bg-red-400 px-1 flex flex-col border-b m-1">
             <div class="flex flex-row justify-center items-center basis-1/3">
               <i class="basis-1/12">date</i>
               <h2 class="basis-11/12 text-center underline">title</h2>
@@ -84,7 +87,7 @@
         <!-- BOTTOM ARTICLES-------------------------------------------------------------------------------------->
         <div class="flex flex-row flex-wrap">
           <!-- SECONDARY ARTICLES--------------------------------------------------------------------------------->
-          <div class="bg-violet-500 flex flex-row flex-wrap basis-3/4">
+          <div class="bg-violet-500 flex flex-row flex-wrap basis-3/4 border-r mt-1">
             <!-- secondary article ------------------------->
             <div class="basis-1/3 px-1">
               <i>date</i>
@@ -111,12 +114,42 @@
             </div>
           </div>
           <!-- MINOR ARTICLES------------------------------------------------------------------------------------->
-          <div class="bg-yellow-400 basis-1/4 flex flex-col justify-between">
-            <div><h2>title</h2></div>
-            <div><h2>title</h2></div>
-            <div><h2>title</h2></div>
-            <div><h2>title</h2></div>
-            <div><h2>title</h2></div>
+          <div class="bg-yellow-400 basis-1/4 flex flex-col gap-0.5 overflow-x-hidden h-full px-1 mt-1">
+            <!-- minor article------------------------------>
+            <div class="minor-article flex-grow">
+              <h2>title</h2>
+              <div>
+                TEST TEXT HIDDEN
+              </div>
+            </div>
+            <!-- minor article------------------------------>
+            <div class="minor-article flex-grow">
+              <h2>title</h2>
+              <div>
+                TEST TEXT HIDDEN
+              </div>
+            </div>
+            <!-- minor article------------------------------>
+            <div class="minor-article flex-grow">
+              <h2>title</h2>
+              <div>
+                TEST TEXT HIDDEN
+              </div>
+            </div>
+            <!-- minor article------------------------------>
+            <div class="minor-article flex-grow">
+              <h2>title</h2>
+              <div>
+                TEST TEXT HIDDEN
+              </div>
+            </div>
+            <!-- minor article------------------------------>
+            <div class="minor-article flex-grow">
+              <h2>title</h2>
+              <div>
+                TEST TEXT HIDDEN
+              </div>
+            </div>                                    
           </div>
         </div>
       </div>
@@ -124,10 +157,10 @@
 
     <!-- FOOTER--------------------------------------------------------------------------------------------------->
     <footer
-      style="background-color: rgb(62, 62, 62); color: white"
-      class="flex flex-row flex-wrap justify-around items-center"
+      style="background-color: rgb(62, 62, 62);"
+      class="flex flex-row flex-wrap justify-around items-center text-amber-50 mt-1"
     >
-      <div class="flex flex-col items-center gap-3">
+      <div class="flex flex-col basis-1/4 items-center gap-3 w-40 h-full">
         <a href="index.html">
         <img
           class="title-logo"
@@ -137,7 +170,7 @@
       </a>
         <a href="https://www.lifehack.org/articles/technology/you-should-aware-these-10-effects-social-media-you.html">
         <img
-          class="max-h-6"
+          class="max-h-6 hover:max-h-[1.45rem]"
           src="/Images/social-media-icons.png"
           alt="social media icons"
         />
@@ -146,25 +179,25 @@
       <div>
         <h2>About us</h2>
         <ul>
-          <li>History</li>
-          <li>Policies</li>
-          <li>Meet the team</li>
-          <li>Career</li>
-          <a href="mailto:"@eckofox1981@pm.me">Contact us</a>
+          <li class="hover:font-semibold">History</li>
+          <li class="hover:font-semibold">Policies</li>
+          <li class="hover:font-semibold">Meet the team</li>
+          <li class="hover:font-semibold">Career</li>
+          <li class="hover:font-semibold"><a href="mailto:"@eckofox1981@pm.me">Contact us</a></li>
         </ul>
       </div>
       <div>
         <h2>Frequent Questions</h2>
         <ul>
-          <li>What are your sources?</li>
-          <li>Are you guys for real?</li>
-          <li>
+          <li class="hover:font-semibold">What are your sources?</li>
+          <li class="hover:font-semibold">Are you guys for real?</li>
+          <li class="hover:font-semibold">
             <a
               href="https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#The_Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything_is_42"
               >What's the meaning of life?</a
             >
           </li>
-          <li>
+          <li class="hover:font-semibold">
             <a href="https://maps.app.goo.gl/iSqL2qFCPWVjcCc79"
               >¿Donde está la biblioteca?</a
             >
@@ -174,11 +207,11 @@
       <div>
         <h2>Navigation</h2>
         <ul>
-          <li><a href="index.html">Latest news</a></li>
-          <li><a href="international.html">International</a></li>
-          <li><a href="domestic.html">Domestic</a></li>
-          <li><a href="sport.html">Sport</a></li>
-          <li><a href="tech.html">Tech</a></li>
+          <li class="hover:font-semibold"><a href="index.html">Latest news</a></li>
+          <li class="hover:font-semibold"><a href="international.html">International</a></li>
+          <li class="hover:font-semibold"><a href="domestic.html">Domestic</a></li>
+          <li class="hover:font-semibold"><a href="sport.html">Sport</a></li>
+          <li class="hover:font-semibold"><a href="tech.html">Tech</a></li>
         </ul>
       </div>
     </footer>
