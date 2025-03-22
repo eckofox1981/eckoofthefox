@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/css/styleoutput.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
-    <header class="group flex flex-col justify-center h-33 border-b ml-7 mr-7">
+  <body class="bg-amber-50">
+    <header class="group flex flex-col justify-center h-33 border-b mx-7">
       <a
         class="flex flex-row flex-wrap justify-center align-middle"
         href="index.html"
@@ -50,22 +50,98 @@
         </div>
       </section>
     </header>
+    <!-- MAIN CONTAINER------------------------------------------------------------------------------------------->
+    <section class="flex flex-row flex-wrap mx-10">
+      <!-- sidebar ---------------------->
+      <div class="bg-blue-400 basis-1/6 px-1 border-r mt-0.5 flex flex-col">
+        <i>date</i>
+        <h2 class="self-center">title</h2>
+        <div class="flex flex-col justify-baseline">
+          <p>article</p>
+          <i class="self-end pr-4">author</i>
+      </div>
+      </div>
+      <!-- MAIN CONTENT ------------------------------------------------------------------------------------------>
+      <div class="bg-amber-800 basis-5/6 flex flex-col">
+        <!-- main article---------------------->
+        <div class="bg-red-400 w-full my-0.5 px-1 flex flex-col">
+            <div class="flex flex-row justify-center items-center basis-1/3">
+              <i class="basis-1/12">date</i>
+              <h2 class="basis-11/12 text-center underline">title</h2>
+            </div>
+            <div class="flex">
+            <div class="basis-1/3">
+              <img src="/Images/EoF logo.png" alt="">
+              <p>article</p>
+            </div>
+            <P class="basis-1/3">article cont</P>
+            <div class="flex flex-col justify-baseline">
+              <p class="basis-1/3">article cont and end</p>
+              <i class="self-end pr-4 pb-2">author</i>
+            </div>
+          </div>
+        </div>
+        <!-- BOTTOM ARTICLES-------------------------------------------------------------------------------------->
+        <div class="flex flex-row flex-wrap">
+          <!-- SECONDARY ARTICLES--------------------------------------------------------------------------------->
+          <div class="bg-violet-500 flex flex-row flex-wrap basis-3/4">
+            <!-- secondary article ------------------------->
+            <div class="basis-1/3 px-1">
+              <i>date</i>
+              <img src="/Images/EoF logo.png" alt="">
+              <h2>title</h2>
+              <p>article</p>
+              <i>author</i>
+            </div>
+            <!-- secondary article ------------------------->
+            <div class="basis-1/3 px-1">
+              <i>date</i>
+              <img src="/Images/EoF logo.png" alt="">
+              <h2>title</h2>
+              <p>article</p>
+              <i>author</i>              
+            </div>
+            <!-- secondary article ------------------------->
+            <div class="basis-1/3 px-1">
+              <i>date</i>
+              <img src="/Images/EoF logo.png" alt="">
+              <h2>title</h2>
+              <p>article</p>
+              <i>author</i>              
+            </div>
+          </div>
+          <!-- MINOR ARTICLES------------------------------------------------------------------------------------->
+          <div class="bg-yellow-400 basis-1/4 flex flex-col justify-between">
+            <div><h2>title</h2></div>
+            <div><h2>title</h2></div>
+            <div><h2>title</h2></div>
+            <div><h2>title</h2></div>
+            <div><h2>title</h2></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- FOOTER--------------------------------------------------------------------------------------------------->
     <footer
       style="background-color: rgb(62, 62, 62); color: white"
       class="flex flex-row flex-wrap justify-around items-center"
     >
-      <div class="flex flex-col items-center w-[5rem]">
+      <div class="flex flex-col items-center gap-3">
+        <a href="index.html">
         <img
           class="title-logo"
           src="/Images/EoF logo BW inverted.png"
           alt="The Ecko Of The Fox logo"
         />
+      </a>
+        <a href="https://www.lifehack.org/articles/technology/you-should-aware-these-10-effects-social-media-you.html">
         <img
-          style="max-width: 5rem; margin-top: 0.5rem"
+          class="max-h-6"
           src="/Images/social-media-icons.png"
           alt="social media icons"
         />
+      </a>
       </div>
       <div>
         <h2>About us</h2>
@@ -74,6 +150,7 @@
           <li>Policies</li>
           <li>Meet the team</li>
           <li>Career</li>
+          <a href="mailto:"@eckofox1981@pm.me">Contact us</a>
         </ul>
       </div>
       <div>
