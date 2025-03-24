@@ -5,8 +5,9 @@
 
 h1 {
     color: rgb(62, 62, 62);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    font-family: "Mr Dafoe", cursive;
 }
 
 h2 {
@@ -103,3 +104,14 @@ p::first-letter {
     }
 }
 
+.chronicle-container {
+    transition: 1s;
+}
+
+.chronicle-container:hover {
+    background-color: rgb(156, 156, 156);
+}
+
+#stock-market-banner {
+    
+}
