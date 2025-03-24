@@ -5,13 +5,17 @@
 
 h1 {
     color: rgb(62, 62, 62);
-    font-size: x-large;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 h2 {
-    font-size: larger;
+    font-size: 1.75rem;
     font-weight: bold;
+}
+
+i {
+    font-size: 1rem;
 }
 .eckoofthefox {
 
@@ -44,6 +48,13 @@ h2 {
 .title-logo:hover {
     height: 4.95rem;
 }
+
+.author {
+    background-color: aquamarine;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: auto;
+}   
 
 .minor-article {
     background-color: aquamarine;

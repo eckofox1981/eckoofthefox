@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/styleoutput.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="bg-amber-50 font-noticia">
+  <body class="bg-amber-50" style="font-family: Noticia; font-size: 1.25rem;">
     <header class="group flex flex-col justify-center h-33 border-b mx-7">
       <a
         class="flex flex-row flex-wrap justify-center align-middle"
@@ -30,8 +30,7 @@
         ><h2 class="eofsubline">for people having given up on the news</h2></a
       >
       <section
-        style="top: 8.25rem"
-        class="fixed left-1/2 transform -translate-x-1/2 flex flex-row justify-evenly align-middle gap-10 w-2xl m-auto invisible group-hover:visible border z-10 p-4 bg-amber-50"
+        class="fixed left-1/2 transform -translate-x-1/2 flex flex-row justify-evenly align-middle gap-10 w-2xl m-auto invisible group-hover:visible border z-10 p-4 top-33 bg-amber-50"
       >
         <div class="font-sans font-semibold text-lg">
           <a href="index.html">Latest news</a>
@@ -48,6 +47,9 @@
         <div class="font-sans font-semibold text-lg">
           <a href="tech.html">Tech</a>
         </div>
+        <div class="font-sans font-semibold text-lg">
+          <a href="tech.html">Entertainment</a>
+        </div>
       </section>
     </header>
     <!-- MAIN CONTAINER------------------------------------------------------------------------------------------->
@@ -59,7 +61,7 @@
         <div class="flex flex-col justify-baseline">
           <p>article</p>
           <div class="flex flex-row flex-wrap content-center gap-3 self-end h-16">
-            <i class="self-center">author</i>
+            <i class="author">author</i>
             <img class="max-h-5 md:max-h-16" src="/Images/fox_sig.png" alt="">
           </div>
       </div>
@@ -72,16 +74,16 @@
               <i class="basis-1/12">date</i>
               <h2 class="basis-11/12 text-center underline">title</h2>
             </div>
-            <div class="flex">
-            <div class="basis-1/3">
-              <img src="/Images/EoF logo.png" alt="">
-              <p>article</p>
-            </div>
-            <P class="basis-1/3">article cont</P>
-            <div class="flex flex-col justify-baseline">
-              <p class="basis-1/3">article cont and end</p>
-              <i class="self-end pr-4 pb-2">author</i>
-            </div>
+            <div class="columns-3 gap-8s text-justify">
+              <p class="bg-amber-100">
+                <img class="max-w-60 max-h-30 p-1 float-left " src="/Images/EoF logo.png" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum dolore quas quod beatae nam fugit, assumenda ea ipsa modi porro, ut fugiat repellat mollitia alias exercitationem nobis ab ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, sapiente rerum similique est aperiam voluptates rem eius, dolorem fugit quam facere itaque quia veritatis maiores minima placeat labore totam. Provident!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae maxime laborum mollitia cumque animi aut quibusdam hic, doloribus dolore fugiat commodi exercitationem est facilis ex veniam dolores at non! Officia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure blanditiis nisi ipsa magnam autem nihil voluptates sint ipsum aspernatur dolorem reiciendis modi quidem et delectus, dicta provident ea explicabo.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam enim atque, ea, vel dicta ipsa esse, labore quo necessitatibus corporis doloribus dolor sapiente exercitationem mollitia? Quos reiciendis rerum eum?
+            </p>
+            <i class="author w-full flex justify-end">author</i>
           </div>
         </div>
         <!-- BOTTOM ARTICLES-------------------------------------------------------------------------------------->
@@ -93,24 +95,30 @@
               <i>date</i>
               <img src="/Images/EoF logo.png" alt="">
               <h2>title</h2>
-              <p>article</p>
-              <i>author</i>
+              <p class="text-justify">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, modi cumque atque a ab repellendus natus laboriosam. Suscipit dolorum earum quam ipsa deleniti cum praesentium ab nihil, quas quibusdam dolores?
+              </p>
+              <i class="author">author</i>
             </div>
             <!-- secondary article ------------------------->
             <div class="basis-1/3 px-1">
               <i>date</i>
               <img src="/Images/EoF logo.png" alt="">
               <h2>title</h2>
-              <p>article</p>
-              <i>author</i>              
+              <p class="text-justify">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed aspernatur ipsam quo! Odio, deleniti perferendis magnam ratione dicta fugit quas reprehenderit quos eius eveniet dolore quidem numquam eaque quisquam repudiandae!
+              </p>
+              <i class="author">author</i>              
             </div>
             <!-- secondary article ------------------------->
             <div class="basis-1/3 px-1">
               <i>date</i>
               <img src="/Images/EoF logo.png" alt="">
               <h2>title</h2>
-              <p>article</p>
-              <i>author</i>              
+              <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque placeat ducimus ad earum dolor unde, numquam labore veniam hic! Doloremque libero beatae adipisci nostrum? Voluptates sapiente consequatur quasi explicabo.
+              </p>
+              <i class="author">author</i>              
             </div>
           </div>
           <!-- MINOR ARTICLES------------------------------------------------------------------------------------->
