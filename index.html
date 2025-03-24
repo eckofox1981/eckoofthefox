@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="/css/styleoutput.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
-  <body class="bg-amber-50" style="font-family: Noticia; font-size: 1.25rem">
+  <body
+    class="bg-amber-50"
+    style="font-family: Noticia; font-size: 1.25rem; color: rgb(39, 39, 39)"
+  >
     <header class="group flex flex-col justify-center h-33 border-b mx-7">
       <a
         class="flex flex-row flex-wrap justify-center align-middle"
@@ -52,10 +55,91 @@
         </div>
       </nav>
     </header>
+    <!-- WEATHER ---------------------->
+    <section
+      class="flex flex-row justify-around gap-8 max-h-16 border-b mx-7 mt-1 pb-1"
+    >
+      <!-- city ---------------------->
+      <div class="flex flex-row max-h-16 max-w-1/5">
+        <img
+          class="w-14 h-14 self-center"
+          src="https://images.icon-icons.com/8/PNG/256/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-end text-[0.75rem] text-wrap">
+          <h3>Helsinki</h3>
+          <div class="leading-3">
+            Dry except in saunas and bars with a chance of knives
+          </div>
+        </div>
+      </div>
+      <!-- city ---------------------->
+      <div class="flex flex-row max-h-16 max-w-1/5">
+        <img
+          class="w-14 h-14 self-center"
+          src="https://images.icon-icons.com/8/PNG/256/sleet_weather_sunny_cloudy_1460.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-end text-[0.75rem] text-wrap">
+          <h3>Washington</h3>
+          <div class="leading-3">Where shitstorms are born</div>
+        </div>
+      </div>
+      <!-- city ---------------------->
+      <div class="flex flex-row max-h-16 max-w-1/5">
+        <img
+          class="w-14 h-14 self-center"
+          src="https://images.icon-icons.com/8/PNG/256/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-end text-[0.75rem] text-wrap">
+          <h3>Paris</h3>
+          <div class="leading-3">
+            Shade to be found beneath the Eiffel tower
+          </div>
+        </div>
+      </div>
+      <!-- city ---------------------->
+      <div class="flex flex-row max-h-16 max-w-1/5">
+        <img
+          class="w-14 h-14 self-center"
+          src="https://images.icon-icons.com/3191/PNG/512/raining_clouds_rain_cloudy_rainy_weather_icon_194235.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-end text-[0.75rem] text-wrap">
+          <h3>London</h3>
+          <div class="leading-3">Rain... did you expect otherwise?</div>
+        </div>
+      </div>
+      <!-- city ---------------------->
+      <div class="flex flex-row max-h-16 max-w-1/5">
+        <img
+          class="w-14 h-14 self-center"
+          src="https://images.icon-icons.com/8/PNG/256/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-end text-[0.75rem] text-wrap">
+          <h3>Nouméa</h3>
+          <div class="leading-3">Far from all the problems of the world</div>
+        </div>
+      </div>
+      <!-- city ---------------------->
+      <div class="flex flex-row max-h-16 max-w-1/5">
+        <img
+          class="w-14 h-14 self-center"
+          src="https://images.icon-icons.com/8/PNG/256/sunrise_sun_sunny_shower_showers_sunny_cloudy_fog_day_time_1458.png"
+          alt=""
+        />
+        <div class="flex flex-col justify-end text-[0.75rem] text-wrap">
+          <h3>Stockholm</h3>
+          <div class="leading-3">Eurovision fever burgeoning</div>
+        </div>
+      </div>
+    </section>
     <!-- MAIN CONTAINER------------------------------------------------------------------------------------------->
     <section class="flex flex-row flex-wrap mx-10">
       <!-- sidebar ---------------------->
-      <div class="basis-1/6 px-1 border-r my-0.5 flex flex-col gap-1">
+      <div class="basis-1/6 px-1 border-r my-1 flex flex-col gap-1">
         <i>date</i>
         <h2 class="self-center">title</h2>
         <div class="flex flex-col justify-baseline">
@@ -109,16 +193,16 @@
         <!-- BOTTOM ARTICLES-------------------------------------------------------------------------------------->
         <div class="flex flex-row flex-wrap">
           <!-- SECONDARY ARTICLES--------------------------------------------------------------------------------->
-          <div class="flex flex-row flex-wrap basis-3/4 border-r mt-1">
+          <div class="flex flex-row flex-wrap basis-3/4 border-r my-1">
             <!-- secondary article ------------------------->
-            <div class="basis-1/3 px-1">
+            <div class="basis-1/3 px-1 flex flex-col">
               <i>date</i>
               <img
                 class="max-w-[75%] mx-auto"
                 src="/Images/EoF logo.png"
                 alt=""
               />
-              <a href="#"><h2>title</h2></a>
+              <a class="self-center" href="#"><h2>title</h2></a>
               <p class="text-justify">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
                 modi cumque atque a ab repellendus natus laboriosam. Suscipit
@@ -128,36 +212,36 @@
               <i class="author">author</i>
             </div>
             <!-- secondary article ------------------------->
-            <div class="basis-1/3 px-1">
+            <div class="basis-1/3 px-1 flex flex-col">
               <i>date</i>
               <img
                 class="max-w-[75%] mx-auto"
                 src="/Images/EoF logo.png"
                 alt=""
               />
-              <a href="#"><h2>title</h2></a>
+              <a class="self-center" href="#"><h2>title</h2></a>
               <p class="text-justify">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed
-                aspernatur ipsam quo! Odio, deleniti perferendis magnam ratione
-                dicta fugit quas reprehenderit quos eius eveniet dolore quidem
-                numquam eaque quisquam repudiandae!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                modi cumque atque a ab repellendus natus laboriosam. Suscipit
+                dolorum earum quam ipsa deleniti cum praesentium ab nihil, quas
+                quibusdam dolores?
               </p>
               <i class="author">author</i>
             </div>
             <!-- secondary article ------------------------->
-            <div class="basis-1/3 px-1">
+            <div class="basis-1/3 px-1 flex flex-col">
               <i>date</i>
               <img
                 class="max-w-[75%] mx-auto"
                 src="/Images/EoF logo.png"
                 alt=""
               />
-              <a href="#"><h2>title</h2></a>
+              <a class="self-center" href="#"><h2>title</h2></a>
               <p class="text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                eaque placeat ducimus ad earum dolor unde, numquam labore veniam
-                hic! Doloremque libero beatae adipisci nostrum? Voluptates
-                sapiente consequatur quasi explicabo.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint,
+                modi cumque atque a ab repellendus natus laboriosam. Suscipit
+                dolorum earum quam ipsa deleniti cum praesentium ab nihil, quas
+                quibusdam dolores?
               </p>
               <i class="author">author</i>
             </div>
@@ -257,7 +341,6 @@
             <a
               href="https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#The_Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything_is_42"
               >What's the meaning of life?</a
-            >
             >
           </li>
           <li class="hover:font-semibold">
