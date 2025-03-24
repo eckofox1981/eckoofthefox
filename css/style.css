@@ -29,6 +29,14 @@ i {
     margin-bottom: 0;
 }
 
+p {
+    text-indent: 3rem;
+}
+p::first-letter {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 .eofsubline {
     color: rgb(39, 39, 39);
     font-family: "Mr Dafoe", cursive;
@@ -50,14 +58,14 @@ i {
 }
 
 .author {
-    background-color: aquamarine;
     font-size: 1.25rem;
     font-weight: bold;
     margin-left: auto;
+    display: flex;
+    justify-content: end;
 }   
 
 .minor-article {
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
@@ -68,16 +76,15 @@ i {
 
 .minor-article h2 {
     align-content: center;
-    background-color: red;
     width: 50%;
-    transition: width 500ms, visibility 500ms;
+    transition: width 800ms, visibility 500ms;
 }
 
 .minor-article div {
-    background-color: blueviolet;
+    align-content: center;
     width: 50%;
     visibility: hidden;
-    transition: width 500ms, visibility 2ms;
+    transition: visibility 1s;
 }
 
 .minor-article:hover {
