@@ -466,8 +466,14 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
+  .h-3\/7 {
+    height: calc(3/7 * 100%);
+  }
   .h-3\/10 {
     height: calc(3/10 * 100%);
+  }
+  .h-3\/11 {
+    height: calc(3/11 * 100%);
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
