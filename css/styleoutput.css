@@ -354,9 +354,6 @@
       max-width: 96rem !important;
     }
   }
-  .mx-0 {
-    margin-inline: calc(var(--spacing) * 0);
-  }
   .mx-0\.5 {
     margin-inline: calc(var(--spacing) * 0.5);
   }
@@ -468,6 +465,9 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-14 {
+    max-height: calc(var(--spacing) * 14);
+  }
   .max-h-16 {
     max-height: calc(var(--spacing) * 16);
   }
@@ -486,9 +486,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -501,6 +498,12 @@
   .w-screen {
     width: 100vw;
   }
+  .max-w-1\/5 {
+    max-width: calc(1/5 * 100%);
+  }
+  .max-w-3\/5 {
+    max-width: calc(3/5 * 100%);
+  }
   .max-w-20 {
     max-width: calc(var(--spacing) * 20);
   }
@@ -509,9 +512,6 @@
   }
   .max-w-\[85\%\] {
     max-width: 85%;
-  }
-  .max-w-fit {
-    max-width: fit-content;
   }
   .max-w-none {
     max-width: none;
@@ -1324,9 +1324,6 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
-  .py-0 {
-    padding-block: calc(var(--spacing) * 0);
-  }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -1941,19 +1938,9 @@
       display: flex;
     }
   }
-  .sm\:w-1\/2 {
-    @media (width >= 40rem) {
-      width: calc(1/2 * 100%);
-    }
-  }
   .sm\:w-2\/5 {
     @media (width >= 40rem) {
       width: calc(2/5 * 100%);
-    }
-  }
-  .sm\:justify-around {
-    @media (width >= 40rem) {
-      justify-content: space-around;
     }
   }
   .sm\:justify-between {
@@ -1993,6 +1980,7 @@ p {
 #hamburger-menu {
   align-content: center;
   text-align: right;
+  padding-right: 0.5rem;
   ul {
     display: none;
   }
