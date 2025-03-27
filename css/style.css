@@ -11,17 +11,24 @@ h1 {
 }
 
 h2 {
+    color: rgb(62, 62, 62);
     font-size: 1.75rem;
     font-weight: bold;
+    text-align: center;
 }
 
 h3 {
+    color: rgb(62, 62, 62);
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 i {
     font-size: 1rem;
+}
+
+p {
+    text-indent: 1rem;
 }
 
 #hamburger-menu {
@@ -48,5 +55,55 @@ i {
         border-top-left-radius: 0.5rem;
         border-bottom-left-radius: 0.5rem;
         padding: 0.5rem;
+    }
+}
+
+.author {
+    background-color: gray;
+    font-family: "Mr Dafoe", cursive;
+    font-size: 1.5rem;
+    justify-self: end;
+    align-self: flex-end;
+    padding-right: 1rem;
+}
+
+.sliding-article {
+    height: 4rem;
+    text-align: center;
+    line-height: normal;
+    border: 1px solid rgb(62, 62, 62);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    overflow: hidden;
+    scrollbar-width: 0%;
+    scrollbar-color: rgba (0,0,0,0);
+    width: 100%;
+    transition: 1s;
+}
+
+.sliding-article h3 {
+    font-size: 1.25rem;
+    align-content: center;
+    width: 100%;
+    transition: width 1000ms, visibility 200ms;
+}
+
+.sliding-article div {
+    align-content: center;
+    width: 0%;
+    visibility: hidden;
+    transition: width 1000ms, visibility 200ms;
+}
+
+.sliding-article:hover {
+    h3 {
+        width: 0%;
+        visibility: hidden;
+    }
+
+    div {
+        width: 100%;
+        visibility: visible;
     }
 }
