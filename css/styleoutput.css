@@ -10,6 +10,8 @@
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-amber-50: oklch(0.987 0.022 95.277);
+    --color-amber-400: oklch(0.828 0.189 84.429);
+    --color-amber-900: oklch(0.414 0.112 45.904);
     --spacing: 0.25rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -340,6 +342,9 @@
       max-width: 96rem !important;
     }
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -427,8 +432,14 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-\[500px\] {
+    height: 500px;
+  }
   .h-screen {
     height: 100vh;
+  }
+  .max-h-24 {
+    max-height: calc(var(--spacing) * 24);
   }
   .max-h-none {
     max-height: none;
@@ -439,11 +450,20 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-\[85\%\] {
+    max-width: 85%;
+  }
+  .max-w-fit {
+    max-width: fit-content;
   }
   .max-w-none {
     max-width: none;
@@ -1051,6 +1071,12 @@
   .bg-amber-50 {
     background-color: var(--color-amber-50);
   }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+  .bg-amber-900 {
+    background-color: var(--color-amber-900);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1225,6 +1251,12 @@
   }
   .object-top {
     object-position: top;
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
   }
   .text-center {
     text-align: center;
@@ -1783,6 +1815,11 @@
   .transform-view {
     transform-box: view-box;
   }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
 }
 h1 {
   color: rgb(62, 62, 62);
@@ -1800,6 +1837,30 @@ h3 {
 }
 i {
   font-size: 1rem;
+}
+#hamburger-menu {
+  align-content: center;
+  text-align: right;
+  ul {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+  }
+}
+#hamburger-menu:hover {
+  ul {
+    display: block;
+    position: absolute;
+    right: 1px;
+    transform: translate(0, 0);
+    background-color: var(--color-amber-50);
+    border: 1px solid rgb(62, 62, 62);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 0.5rem;
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
