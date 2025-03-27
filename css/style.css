@@ -52,11 +52,14 @@ p::first-letter {
     display: flex;
     justify-content: center;
     margin-top: -0.125rem;
+    text-align: center;
 }
 
 .title-logo {
     margin-top: 1rem;
-    height: 5rem;
+    width: 100%;
+    max-height: 5rem;
+    object-fit: contain;
 }
 
 .title-logo:hover {
@@ -112,6 +115,22 @@ p::first-letter {
     background-color: rgb(156, 156, 156);
 }
 
-#stock-market-banner {
+@keyframes stockbanner {
+    0% {
+        transform: translateX();
+    }
+
+    100% {
+        justify-content: end;
+    }
     
+}
+
+#stock-market-banner {
+    background-color: aqua;
+    width: 270%;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+    animation: stockbanner 10s linear 0 infinite running both;
 }
