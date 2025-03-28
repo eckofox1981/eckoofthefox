@@ -13,8 +13,12 @@ h1 {
 h2 {
     color: rgb(62, 62, 62);
     font-size: 1.75rem;
-    font-weight: bold;
+    font-weight:700;
     text-align: center;
+}
+
+h2:hover {
+    text-decoration: underline;
 }
 
 h3 {
@@ -70,7 +74,7 @@ p {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                gap: 1rem;
+                gap: 2rem;
                 position: absolute;
                 left: 50%;
                 transform: translate(-50%, 1.5rem);
@@ -79,12 +83,13 @@ p {
                 border-radius: 0.5rem;
                 padding: 0.5rem;
                 min-width: fit-content;
+                max-width: fit-content;
             }
         }
+    }
 }
 
 .author {
-    background-color: gray;
     font-family: "Mr Dafoe", cursive;
     font-size: 1.5rem;
     justify-self: end;
