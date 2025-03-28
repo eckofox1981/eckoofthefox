@@ -44,7 +44,6 @@ p {
     }
 }
 
-
 #hamburger-menu:hover {
     ul {
         display: block;
@@ -57,6 +56,35 @@ p {
         border-bottom-left-radius: 0.5rem;
         padding: 0.5rem;
     }
+}
+
+@media only screen and (min-width: 1024px) {
+    #hamburger-menu {
+        svg {
+            visibility: hidden;
+        }
+    }
+    header:hover {
+        #hamburger-menu {
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 1rem;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 1.5rem);
+                background-color: var(--color-amber-50);
+                border: 1px solid rgb(62, 62, 62);
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+            }
+        }
+
+        #hamburger-menu:hover {
+            pointer-events: none;
+        }
+    
 }
 
 .author {
