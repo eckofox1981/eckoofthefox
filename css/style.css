@@ -33,6 +33,7 @@ i {
 
 p {
     text-indent: 1rem;
+    line-height: 1.25rem;
 }
 
 #hamburger-menu {
@@ -132,6 +133,25 @@ p {
     padding-right: 1rem;
 }
 
+.date-and-title {
+    width: 100%;
+    div {
+        margin-left: 0.5rem;
+        margin-right: auto;
+        margin-bottom: 0;
+        font-size: small;
+        font-style: italic;
+    }
+    h2 {
+        line-height: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding: 0;
+    }
+}
+
+
 .flip-card {
     background-color: transparent;
     width: 100%;
@@ -173,6 +193,11 @@ p {
     background-color: rgb(62, 62, 62);
     color: var(--color-amber-50);
     transform: rotateY(180deg);
+    align-content: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
 footer {
