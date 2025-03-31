@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+.normal-sidebar {
+    display: inline;
+    position: fixed;
+    top: 4rem;
+    left: 0rem;
+    justify-items: end;
+    z-index: 49;
+    color: var(--color-amber-50);
+    transition: 1s;
+    div {
+        background-color: rgba(62, 62, 62, 0.95);
+        display: none;
+        height: 100vh;
+        border-radius: 1rem;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        h1 {
+            color: var(--color-amber-50);
+        }
+    }
+}
+
+.normal-sidebar:hover {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .normal-sidebar {
+        position: static;
+        background-color: rgba(62, 62, 62, 0.95);
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div {
+            display: block;
+            height: 100%;
+            border-radius: 0;
+            background-color: transparent;
+        }
+    }
+
+    .normal-sidebar:hover {
+        display: inline;
+        flex-direction: initial;
+        gap: initial;
+        
+        div {
+            display: block;
+            flex-direction: initial;
+            align-items: initial;
+        }
+    }
+    
+}
