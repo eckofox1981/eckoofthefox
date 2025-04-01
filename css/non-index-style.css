@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import "tailwindcss";
 
 .normal-sidebar {
     display: inline;
@@ -23,6 +22,11 @@
             color: var(--color-amber-50);
         }
     }
+
+    li {
+        line-height: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
 }
 
 .normal-sidebar:hover {
@@ -34,6 +38,10 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+.normal-sidebar a:hover {
+    font-weight: 600;
 }
 
 @media only screen and (min-width: 1024px) {

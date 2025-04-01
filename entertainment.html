@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ecko Of The Fox - unreal news</title>
+    <link rel="stylesheet" href="/css/styleoutput.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/non-index-style.css" />
+  </head>
+  <body
+    class="bg-amber-50 text-justify"
+    style="font-family: Noticia; font-size: 1.25rem; color: rgb(39, 39, 39)"
+  >
+    <header
+      class="h-16 w-full py-0.5 flex justify-between content-center border-b fixed top-0 z-50 bg-amber-50 lg:h-28"
+    >
+      <div
+        class="max-h-16 max-w-[85%] self-center flex flex-row justify-center content-center mx-auto lg:h-28"
+      >
+        <img
+          class="hidden sm:block max-w-1/5 max-h-14 lg:max-h-28"
+          src="/logos/EoF logo BW.png"
+          alt="ecko of the fox logo"
+        />
+        <img
+          class="max-w-3/5 max-h-14 lg:max-h-28"
+          src="/logos/EoF title BW.png"
+          alt="ecko of the fox title"
+        />
+      </div>
+      <div id="hamburger-menu">
+        <svg
+          width="2rem"
+          height="2rem"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+            fill="rgb(62,62,62)"
+          />
+        </svg>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/international.html">International</a></li>
+          <li><a href="/domestic.html">Domestic</a></li>
+          <li><a href="/economy.html">Economy</a></li>
+          <li><a href="/tech.html">Technology</a></li>
+          <li><a href="/entertainment.html">Entertainment</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- SIDEBAR++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <section class="mt-18 flex flex-col lg:flex-row lg:mt-28">
+      <section class="normal-sidebar">
+        <img class="max-w-20 h-10 pr-4" src="/logos/EoF logo.png" alt="" />
+        <div>
+          <h1 class="text-center text-xs/5 mb-2">Other news</h1>
+          <ul>
+            <li>
+              <a href="/international.html"
+                >Joe Rogan to run in 2028 US election</a
+              >
+            </li>
+            <li><a href="tech.html">We tried NeuralLink!</a></li>
+            <li>
+              <a href="economy.html"
+                >Stock Market Today: The Rollercoaster of Financial Genius and
+                Outrageous Predictions</a
+              >
+            </li>
+            <li>
+              <a href="international.html"
+                >Putin caught with russian blow up dolls</a
+              >
+            </li>
+            <li>
+              <a href="domestic.html"
+                >Stockholm's Drinking Water to Come from Harbour</a
+              >
+            </li>
+            <li>
+              <a href="tech.html">WhatsApp to be used among CIA agents</a>
+            </li>
+            <li>
+              <a href="domestic.html">Annexation to Danmark still ongoing</a>
+            </li>
+            <li>
+              <a href="international.html">Australia to save the great reef</a>
+            </li>
+            <li>
+              <a href="domestic.html"
+                >Dad jokes can lower your child's life span</a
+              >
+            </li>
+            <li><a href="economy.html">Mars Travel on the rise</a></li>
+            <li>
+              <a href="international.html"
+                >Danmark to cede Greenland to Panama</a
+              >
+            </li>
+            <li>
+              <a href="entertainment.html">New Fast and The Furious Movie</a>
+            </li>
+            <li><a href="domestic.html">Therapy Sessions for Penguins</a></li>
+            <li>
+              <a href="international.html">Bears Run for Local Elections</a>
+            </li>
+            <li>
+              <a href="entertainment.html"
+                >Taylor Swift Marries Swedish Ping Pong Champion</a
+              >
+            </li>
+            <li>
+              <a href="international.html"
+                >Working conditions in factories to be improved</a
+              >
+            </li>
+            <li>
+              <a href="entertainment.html"
+                >Pet Whale Drops Third Album on Spotify</a
+              >
+            </li>
+            <li>
+              <a href="economy.html">New start up selling elephant milk</a>
+            </li>
+            <li>
+              <a href="entertainment.html"
+                >Daniel Craig to Play Chef in New Film</a
+              >
+            </li>
+            <li><a href="international.html">Moonlit Cats In Rome</a></li>
+            <li><a href="international.html">Illegal Aliens In Paris</a></li>
+            <li>
+              <a href="economy.html">Musk to Manufacture Digital Condoms</a>
+            </li>
+            <li>
+              <a href="domestic.html"
+                >Esrange developps weapon against Paris' aliens</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- MAIN CONTENT++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <section
+        class="flex flex-col px-2 border-b mx-0.5 lg:max-w-[1300px] lg:mx-auto lg:border-0"
+      >
+        <div class="flex flex-col lg:flex-row lg:gap-4">
+          <!-- main article------------------------------------------- -->
+          <div class="flex flex-col items-center content-center my-0.5">
+            <h1 class="underline">Entertainment news</h1>
+            <div class="date-and-title">
+              <div>USA, April 1, 2025</div>
+              <h2>
+                <a href="#"
+                  >Hollywood’s Newest Film: "The Fast & The Furious: Slow &
+                  Quiet" Takes on the EV Future</a
+                >
+              </h2>
+            </div>
+            <img
+              class="max-h-36 lg:max-h-64"
+              src="https://imgs.search.brave.com/VdNZknuKpBIzJWxw6DokPcveHDkskIeUFCqrSYlMDM4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk9HSTBOak14/TURrdE16Vm1NaTAw/TkRBNExUaGtNR1V0/WWpsak5USmpORGd4/TmpVelhrRXlYa0Zx/Y0djQC5qcGc"
+              alt="Vin Diesel in a faster paced movie"
+            />
+            <p class="lg:columns-3">
+              In a futuristic twist, the Fast & Furious franchise is evolving in
+              a way no one expected. The upcoming film, The Fast & The Furious:
+              Slow & Quiet, takes place in a world where all cars are electric,
+              self-driving, and—let’s face it—extremely boring. The once
+              heart-pounding world of drag races and turbocharged engines has
+              been replaced with zero-emission, full-silent electric vehicles.
+              But don’t worry—there’s still plenty of drama, just without the
+              roar of an engine. Director Justin Lin, known for the franchise’s
+              high-octane action, says the shift was inevitable. “In the future,
+              all cars will be EVs. So, we decided to embrace it. We’ve taken
+              the heart-pounding races and applied them to a world where
+              ‘speeding’ means going 45 mph in a Prius-like electric sedan.” Vin
+              Diesel returns as Dom Toretto, but instead of dominating the
+              streets in a muscle car, he’s cruising around in a sleek, but
+              completely unexciting, electric sedan. His biggest challenge?
+              Avoiding the ‘Autopilot Override’ feature that takes the wheel
+              whenever he tries to speed. “You can’t outrun traffic anymore. You
+              just have to deal with it,” Diesel says in a serious tone. The
+              stakes are high as Dom and his team face a nefarious villain—“The
+              Eco-Overlord”—who has hacked all self-driving cars to ensure they
+              always take the longest, most traffic-filled route. The only way
+              to beat him? An old-fashioned "manual" override, but no one can
+              remember how to drive without autopilot. Fans are already divided.
+              Some are excited for the new direction, others are just sad
+              there’s no car drifting at 200 mph. But one thing is certain: The
+              Fast & The Furious: Slow & Quiet will redefine what it means to be
+              fast... or at least mildly efficient on your commute. The film's
+              tagline says it all: “It's not about the speed, it's about the
+              battery life.”
+            </p>
+            <i class="author"> by Anne Onimous</i>
+          </div>
+        </div>
+        <!-- SECONDARY ARTICLES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <div class="flex flex-col xl:flex-row xl:gap-1 xl:border-t">
+          <!-- secondary article-------------------------------------- -->
+          <div
+            class="flex flex-col items-center content-center my-0.5 px-2 xl:w-1/4 lg:border-r"
+          >
+            <div class="date-and-title">
+              <div>France, March 31, 2025</div>
+              <h2>
+                <a href="#"
+                  >French Film Breaks Tradition: No Feelings, Just Cheese</a
+                >
+              </h2>
+            </div>
+            <p>
+              <img
+                class="max-w-[50%] max-h-24 float-left px-1"
+                src="https://imgs.search.brave.com/A0kYfwGqHmu-pMgfIftZ2-874RIq5eweTnjX7hEBD-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbnNw/aXJlZGJ5bWFwcy5j/b20vd3AtY29udGVu/dC91cGxvYWRzL0V4/dHJhb3JkaW5hcnkt/TW92aWVzLVNldC1J/bi1GcmFuY2UtVGhh/dC1XaWxsLUluc3Bp/cmUtWW91LVRvLVZp/c2l0LTEuanBn"
+                alt="paris with clapet"
+              />
+              In a shocking turn of events, a new French film, Fromage & No
+              Feelings, is defying all expectations by being completely void of
+              the usual emotional depth we’ve come to expect from French cinema.
+              Set in a small village, the plot revolves around a group of locals
+              who, instead of engaging in existential angst, spend the entire
+              film discussing the best cheese for a baguette. Director Pierre
+              Leclercq explained, “I wanted to make a film that wasn’t about
+              love, loss, or longing. Just cheese. Nothing too deep. Life is
+              complicated enough, so why not keep it simple?” The film’s
+              protagonist, Jacques, spends hours in cheese shops, comparing
+              textures, aromas, and flavors. There’s no heartbreak, no grand
+              romantic gestures—just a lot of cheese. While critics are
+              scratching their heads, the film has become a surprise hit, with
+              many applauding its ability to just “be.” Fromage & No
+              Feelings—sometimes, simple is the best.
+            </p>
+            <i class="author"> by Tatiana Ruskova</i>
+          </div>
+          <!-- secondary article-------------------------------------- -->
+          <div
+            class="flex flex-col items-center content-center my-0.5 px-2 xl:w-1/4 lg:border-r"
+          >
+            <div class="date-and-title">
+              <div>Iceland, March 31, 2025</div>
+              <h2>
+                <a href="#"
+                  >Icelandic Pet Whale Drops Third Album on Spotify, World
+                  Applauds</a
+                >
+              </h2>
+            </div>
+            <p>
+              <img
+                class="max-w-[50%] max-h-24 float-left px-1"
+                src="https://imgs.search.brave.com/-u3p_6mRH0vUE1lclF48RaT4hLM2A6UOn9fAg6RcIwY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hZHZl/bnR1cmVzLmlzL21l/ZGlhLzIyNTU1My9o/dW1wYmFjay13aGFs/ZS1icmFjaC1zZWEt/aWNlbGFuZC1kYWx2/aWsuanBnP2FuY2hv/cj1jZW50ZXImbW9k/ZT1jcm9wJndpZHRo/PTk3MCZoZWlnaHQ9/NjQ1JnJuZD0xMzIz/MjYyNzI2MjAwMDAw/MDAmZm9ybWF0PWpw/ZyZxdWFsaXR5PTgw"
+                alt="björn singing"
+              />
+              In an unbelievable turn of events, an Icelandic pet whale named
+              Björn has just released its third award-winning album on Spotify.
+              Titled <q>Deep Sea Echoes</q>, the album features ethereal
+              underwater sounds, interspersed with soothing whale songs, and is
+              already making waves in the music industry.
+              <q>I’ve always believed in Björn’s musical potential</q>, said
+              owner Freya Jónsdóttir, a marine biologist who discovered her
+              whale’s knack for rhythm during feeding time. “Who knew that the
+              gentle slapping of his tail could turn into a chart-topping hit?”
+              Björn’s previous two albums, Flukes of Serenity and Tidal Vibes,
+              earned international recognition, but this new release has already
+              earned several music awards, including
+              <q>Best Ambient Album</q> and
+              <q>Most Unexpected Artist of the Year.</q> With its blend of
+              oceanic melodies and whale vocals, <q>Deep Sea Echoes</q> has
+              critics saying it’s <q>the sound of the future</q>—or perhaps the
+              sound of the sea.
+            </p>
+            <i class="author">by Chet Gepeto</i>
+          </div>
+          <!-- secondary article-------------------------------------- -->
+          <div
+            class="flex flex-col items-center content-center my-0.5 px-2 xl:w-1/4 lg:pr-0.5"
+          >
+            <div class="date-and-title">
+              <div>China, March 31, 2025</div>
+              <h2>
+                <a href="#"
+                  >Taylor Swift Marries Swedish Ping Pong Champion Truls
+                  Möregårdh</a
+                >
+              </h2>
+            </div>
+            <p>
+              <img
+                class="max-w-[50%] max-h-24 float-left mt-4"
+                src="https://imgs.search.brave.com/_H8m8xy_DBG_ubfxXbc3llaZxLL1SffWNEf-GWTwC44/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9hL2E4L1Rh/YmxlX3Rlbm5pc19h/dF90aGVfMjAxOF9T/dW1tZXJfWW91dGhf/T2x5bXBpY3NfJUUy/JTgwJTkzX01peGVk/X0Jyb256ZV9NZWRh/bF9NYXRjaF9NZW5f/MTA5LmpwZy81MTJw/eC1UYWJsZV90ZW5u/aXNfYXRfdGhlXzIw/MThfU3VtbWVyX1lv/dXRoX09seW1waWNz/XyVFMiU4MCU5M19N/aXhlZF9Ccm9uemVf/TWVkYWxfTWF0Y2hf/TWVuXzEwOS5qcGc"
+                alt="Truls Möregårdh at the Paris Olympic 2025"
+              />
+              In a surprise twist that has sent shockwaves through both the
+              music and sports worlds, pop sensation Taylor Swift has married
+              Swedish ping pong champion Truls Möregårdh. The couple tied the
+              knot in a small, intimate ceremony in Stockholm, where Truls is
+              known for his lightning-fast reflexes and championship titles.
+              <q
+                >I never thought I’d meet someone who could match my energy, but
+                Truls’ serve is just as powerful as my songwriting</q
+              >, Taylor said in her wedding speech, holding back tears. Truls,
+              known for his impressive backhand and cool demeanor, was equally
+              smitten, sharing,
+              <q
+                >Taylor’s the one who taught me to ‘shake it off’—especially
+                when I’m losing in ping pong!</q
+              >
+              The couple’s whirlwind romance began after Taylor attended one of
+              Truls’ matches last year, and they’ve been inseparable ever since.
+              Fans are already speculating whether Taylor’s next album will
+              feature ping pong-inspired tracks.
+            </p>
+            <i class="author">by Maui</i>
+          </div>
+          <!-- FLIPING   ARTICLES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+          <div
+            class="overflow-hidden flex flex-col gap-4 justify-around my-2 xl:w-1/4"
+          >
+            <!-- fliping   article-------------------------------------- -->
+            <a class="flip-card" href="#">
+              <div class="flip-card-inner">
+                <h3 class="flip-card-front">
+                  Joe Rogan to run in 2028 US election
+                </h3>
+                <div class="flip-card-back">
+                  The former MMA-fighter and stand-up comedian said he'll kick
+                  his opposition's ass.
+                </div>
+              </div>
+            </a>
+            <!-- fliping   article-------------------------------------- -->
+            <a class="flip-card" href="#">
+              <div class="flip-card-inner">
+                <h3 class="flip-card-front">
+                  Surprise on Arnol Schwarzenegger death bed
+                </h3>
+                <div class="flip-card-back">
+                  The austrian actor turned out to be a real killer robot from
+                  the future. It just ran out of battery.
+                </div>
+              </div>
+            </a>
+            <!-- fliping   article-------------------------------------- -->
+            <a class="flip-card" href="#">
+              <div class="flip-card-inner">
+                <h3 class="flip-card-front">
+                  MCU phase #5648 <br />to start this fall
+                </h3>
+                <div class="flip-card-back">
+                  The Ecko Of The Fox is unable to write about this... we
+                  stopped caring 505 phases ago.
+                </div>
+              </div>
+            </a>
+            <!-- fliping   article-------------------------------------- -->
+            <a class="flip-card" href="#">
+              <div class="flip-card-inner">
+                <h3 class="flip-card-front">
+                  Baby did it again! Britney's back
+                </h3>
+                <div class="flip-card-back">
+                  Britney Spears is recording a new album with heavy metal band
+                  Metallica.
+                </div>
+              </div>
+            </a>
+            <!-- fliping   article-------------------------------------- -->
+            <a class="flip-card" href="#">
+              <div class="flip-card-inner">
+                <h3 class="flip-card-front">Snow White II started filming</h3>
+                <div class="flip-card-back">
+                  This time Snow White will be fighting Sleeping Beauty to keep
+                  the dwarfs enslaved.
+                </div>
+              </div>
+            </a>
+            <!-- fliping   article-------------------------------------- -->
+            <a class="flip-card" href="#">
+              <div class="flip-card-inner">
+                <h3 class="flip-card-front">
+                  Director comes with a new movie idea!
+                </h3>
+                <div class="flip-card-back">
+                  Shocking news as the director is not rebranding an old 80's
+                  IP.
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- SECONDARY CONTENT+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <section
+          class="w-full h-fit flex flex-col items-center justify-between px-2 pb-1 text-justify border-t lg:max-w-[1300px] lg:flex-row lg:flex-wrap lg:gap-0.5 lg:justify-around"
+        >
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w-full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>India, April 1, 2025</div>
+              <h2>
+                <a href="#">Bollywood Cries: a Documentary</a>
+              </h2>
+            </div>
+            <p>A heartfelt documentary about very very rich indian actors.</p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w-full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>Internet, April 1, 2025</div>
+              <h2>
+                <a href="#">ChatGPT's First Book: Binary Thoughts</a>
+              </h2>
+            </div>
+            <p>Critics said it was probably written by DeepSeek.</p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w/full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>Finland, April 1, 2025</div>
+              <h2>
+                <a href="#">Santa on Strike for Early Retirement</a>
+              </h2>
+            </div>
+            <p>
+              Meeting with union representatives, Santa demands to retire in
+              2058.
+            </p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w/full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>South Korea, April 1, 2025</div>
+              <h2>
+                <a href="#">K-Pop Now Considered Philosophical</a>
+              </h2>
+            </div>
+            <p>
+              Philosophers say there is a hidden depth in the lyrics of Gangnam
+              Style.
+            </p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w/full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>Spain, April 1, 2025</div>
+              <h2>
+                <a href="#">Banderas to play Swedish Hockey Legend</a>
+              </h2>
+            </div>
+            <p>
+              Antonio Banderas will star as Borje Salming in a movie about his
+              life.
+            </p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w-full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>Los Angeles, April 1, 2025</div>
+              <h2>
+                <a href="#">Keanu Reeves Joins Broadway Musical</a>
+              </h2>
+            </div>
+            <p>
+              Keanu Reeves will star in a Broadway adaptation of
+              <i>The Matrix</i>... as himself.
+            </p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w-full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>London, April 1, 2025</div>
+              <h2>
+                <a href="#">Daniel Craig to Play Chef in New Film</a>
+              </h2>
+            </div>
+            <p>
+              The actor will trade spies for soufflés in the drama
+              <i>Shaken, Not Stirred</i>.
+            </p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w-full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>Paris, April 1, 2025</div>
+              <h2>
+                <a href="#">Meryl Streep to Star in VR Film</a>
+              </h2>
+            </div>
+            <p>
+              Streep will play in a groundbreaking VR film where every scene
+              ends in a dramatic monologue.
+            </p>
+          </div>
+
+          <!-- quick title-------------------------------------------- -->
+          <div
+            class="p-2 my-2 border text-center w-full lg:w-1/5 lg:h-44 xl:w-2/11"
+          >
+            <div class="date-and-title">
+              <div>Tokyo, April 1, 2025</div>
+              <h2>
+                <a href="#">Godzilla to Star in Romantic Comedy</a>
+              </h2>
+            </div>
+            <p>
+              Godzilla will play the lead role in a rom-com titled
+              <i>Love in the Ruins</i>.
+            </p>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!-- FOOTER++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <footer>
+      <a class="max-w-20 ml-4 self-center justify-center sm:max-w-40" href="#"
+        ><img src="logos/EoF logo BW inverted.png" alt="ecko of the fox logo" />
+        <i class="w-full justify-self-center text-amber-50">© eckofox</i>
+      </a>
+      <div>
+        <div class="footer-list-appear">
+          <h2><a href="#">About us</a></h2>
+          <ul>
+            <li>Our History</li>
+            <li>The Team</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="#">Policies</a></h2>
+          <ul>
+            <li>Our History</li>
+            <li>The Team</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h2><a href="#">Navigation</a></h2>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/international.html">International</a></li>
+            <li><a href="/domestic.html">Domestic</a></li>
+            <li><a href="/economy.html">Economy</a></li>
+            <li><a href="/tech.html">Technology</a></li>
+            <li><a href="/entertainment.html">Entertainment</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

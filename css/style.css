@@ -101,7 +101,7 @@ p {
     div {
         background-color: rgba(62, 62, 62, 0.95);
         display: none;
-        height: 100vh;
+        max-height: 80vh;
         border-radius: 1rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
@@ -143,7 +143,7 @@ p {
         font-style: italic;
     }
     h2 {
-        line-height: 1.5rem;
+        line-height: 1.6rem;
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
