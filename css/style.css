@@ -107,6 +107,7 @@ p {
         padding-right: 0.5rem;
     }
 }
+
     
 
 .sidebar h1 {
@@ -215,6 +216,7 @@ footer {
     h2 {
         color: var(--color-amber-50);
     }
+
 }
 
 footer > div {
