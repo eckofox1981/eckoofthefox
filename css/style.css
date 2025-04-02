@@ -143,6 +143,7 @@ p {
 
 .date-and-title {
     width: 100%;
+    margin-bottom: 2px;
     div {
         margin-left: 0.5rem;
         margin-right: auto;

@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .normal-sidebar {
-    max-width: 20%;
+    max-width: 50%;
+    height: 90vh;
     display: inline;
     position: fixed;
     top: 4rem;
@@ -13,12 +14,11 @@
     div {
         background-color: rgba(62, 62, 62, 0.95);
         display: none;
-        height: 80vh;
         border-radius: 1rem;
         padding-top: 1rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        overflow-y: scroll;
+        overflow-y: auto;
         h1 {
             color: var(--color-amber-50);
         }
@@ -52,7 +52,10 @@
 
 @media only screen and (min-width: 1024px) {
     .normal-sidebar {
-        position: static;
+        width: full;
+        max-width: 35%;
+        height: auto;
+        position: static; /* Changed from static */
         background-color: rgba(62, 62, 62, 0.95);
         img {
             margin-left: auto;
