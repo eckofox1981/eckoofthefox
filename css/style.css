@@ -105,7 +105,9 @@ p {
         border-radius: 1rem;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+        overflow-y: scroll;
     }
+    
 }
 
     
@@ -117,13 +119,18 @@ p {
 
 .sidebar:hover {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     gap: 1rem;
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+}
+
+.sidebar li:hover {
+    background-color: var(--color-amber-50);
+    color: rgb(62, 62, 62);
 }
 
 .author {
