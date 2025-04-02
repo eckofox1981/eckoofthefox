@@ -1006,9 +1006,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .overflow-auto {
-    overflow: auto;
-  }
   .overflow-hidden {
     overflow: hidden;
   }
@@ -1983,6 +1980,12 @@
       gap: calc(var(--spacing) * 2);
     }
   }
+  .sm\:border-b {
+    @media (width >= 40rem) {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 1px;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -2104,12 +2107,6 @@
     @media (width >= 64rem) {
       border-right-style: var(--tw-border-style);
       border-right-width: 1px;
-    }
-  }
-  .lg\:border-b {
-    @media (width >= 64rem) {
-      border-bottom-style: var(--tw-border-style);
-      border-bottom-width: 1px;
     }
   }
   .lg\:border-b-0 {
