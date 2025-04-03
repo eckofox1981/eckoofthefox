@@ -119,13 +119,13 @@
 }
 
 .stock-banner {
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 4rem;
     font-family: 'Courier New', Courier, monospace;
     height: 2rem;
     background-color: black;
-    white-space: nowrap;
     animation: slideby 30s linear 0s infinite alternate;
 }
 
