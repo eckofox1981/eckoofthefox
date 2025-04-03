@@ -55,7 +55,7 @@
         width: full;
         max-width: 35%;
         height: auto;
-        position: static; /* Changed from static */
+        position: static;
         background-color: rgba(62, 62, 62, 0.95);
         img {
             margin-left: auto;
@@ -83,36 +83,56 @@
     
 }
 
+.stock-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    height: 2rem;
+}
+
 .single-stock-plus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    border-top: 1px solid green;
-    border-bottom: 1px solid green;
+    gap: 3px;
     color: blue;
-    p {
-        color: green;
-    }
+}
+
+.single-stock-plus p {
+    color: green;
+    margin: 0;
+}
+
+.single-stock-minus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    color: blue;
+}
+
+.single-stock-minus p {
+    color: red;
+    margin: 0;
 }
 
 .stock-banner {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     height: 2rem;
-    width: 100%;
     background-color: black;
-    
-    animation-name: slideby;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    white-space: nowrap;
+    animation: slideby 30s linear 0s infinite alternate;
 }
 
 @keyframes slideby {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
-  }
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
