@@ -262,6 +262,7 @@ footer > div {
 
     #logo-social-media {
         max-width: 6rem;
+        margin-left: 0.5rem;
         i {
             font-size: x-small;
         }
