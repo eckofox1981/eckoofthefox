@@ -82,3 +82,37 @@
     }
     
 }
+
+.single-stock-plus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    color: blue;
+    p {
+        color: green;
+    }
+}
+
+.stock-banner {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    font-family: monospace;
+    height: 2rem;
+    width: 100%;
+    background-color: black;
+    
+    animation-name: slideby;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes slideby {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+  }
+
