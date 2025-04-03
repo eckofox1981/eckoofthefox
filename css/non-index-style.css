@@ -89,6 +89,7 @@
     overflow: hidden;
     background-color: black;
     height: 2rem;
+    margin-bottom: -2rem;
 }
 
 .single-stock-plus {
