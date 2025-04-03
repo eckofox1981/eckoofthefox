@@ -233,6 +233,19 @@ footer > div {
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#logo-social-media {
+    max-width: 12rem;
+    padding: 1rem;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 0;
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -244,6 +257,13 @@ footer > div {
         gap: 0;
         h2 {
             font-size: 1rem;
+        }
+    }
+
+    #logo-social-media {
+        max-width: 6rem;
+        i {
+            font-size: x-small;
         }
     }
     
