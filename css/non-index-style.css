@@ -85,7 +85,7 @@
 
 .stock-container {
     display: block;
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
     background-color: black;
     height: 2rem;

@@ -544,8 +544,14 @@
   .max-w-\[50\%\] {
     max-width: 50%;
   }
+  .max-w-\[75\%\] {
+    max-width: 75%;
+  }
   .max-w-\[85\%\] {
     max-width: 85%;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .max-w-none {
     max-width: none;
@@ -1975,6 +1981,11 @@
       }
     }
   }
+  .max-md\:max-w-full {
+    @media (width < 48rem) {
+      max-width: 100%;
+    }
+  }
   .max-md\:group-hover\:block {
     @media (width < 48rem) {
       &:is(:where(.group):hover *) {
@@ -2040,6 +2051,11 @@
       max-width: 25%;
     }
   }
+  .md\:max-w-full {
+    @media (width >= 48rem) {
+      max-width: 100%;
+    }
+  }
   .lg\:mx-auto {
     @media (width >= 64rem) {
       margin-inline: auto;
@@ -2098,6 +2114,21 @@
   .lg\:max-w-\[40\%\] {
     @media (width >= 64rem) {
       max-width: 40%;
+    }
+  }
+  .lg\:max-w-\[75\%\] {
+    @media (width >= 64rem) {
+      max-width: 75%;
+    }
+  }
+  .lg\:max-w-\[700px\] {
+    @media (width >= 64rem) {
+      max-width: 700px;
+    }
+  }
+  .lg\:max-w-\[900px\] {
+    @media (width >= 64rem) {
+      max-width: 900px;
     }
   }
   .lg\:max-w-\[1300px\] {
@@ -2209,6 +2240,11 @@
       max-width: 50%;
     }
   }
+  .xl\:max-w-\[1300px\] {
+    @media (width >= 80rem) {
+      max-width: 1300px;
+    }
+  }
   .xl\:max-w-full {
     @media (width >= 80rem) {
       max-width: 100%;
@@ -2239,6 +2275,11 @@
   .xl\:pr-0\.5 {
     @media (width >= 80rem) {
       padding-right: calc(var(--spacing) * 0.5);
+    }
+  }
+  .\32 xl\:max-w-\[1300px\] {
+    @media (width >= 96rem) {
+      max-width: 1300px;
     }
   }
 }
