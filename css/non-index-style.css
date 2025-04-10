@@ -70,13 +70,14 @@
     }
 
     .normal-sidebar:hover {
+        max-width: 25%;
         display: inline;
         flex-direction: initial;
         gap: initial;
         
         div {
-            display: block;
-            flex-direction: initial;
+            display: flex;
+            flex-direction: column;
             align-items: initial;
         }
     }
